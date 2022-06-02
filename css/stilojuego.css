@@ -1,0 +1,91 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    background-color: rgb(195, 195, 195);
+}
+
+h1{ 
+    margin: 20px 0;
+    display: flex inline-block;
+    justify-content: center;
+    background-color: transparent;
+    padding: 4px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    color: rgb(19, 119, 191);
+    text-align: center;
+
+}
+
+#pantalla{
+    border: groove 8px rgb(170, 104, 0);
+    background: rgb(19, 119, 191);   
+    border-radius: 24px;
+}
+
+.boton{
+    background-color: rgb(19, 119, 191);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+    border: solid 2px rgb(170, 104, 0);
+    border-radius: 24px;
+}
+
+.boton:hover{ /* Estilo que se activa al pasar el puntero sobre el boton */
+    background-color: rgb(195, 195, 195);
+    font-size: 22px;
+    border: groove 4px rgb(170, 104, 0);
+    border-radius: 24px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(15, 15, 15);
+    border-bottom: 1px solid rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-style: italic;
+    
+}
+
+.copyright {
+    margin: auto;
+    justify-content: center;
+}
+
+.redes {
+    margin: auto 6px;
+    justify-content: flex-end;
+}
+
+.imgRedes {
+    vertical-align: middle;
+    cursor: pointer;
+    width: 28px;
+    height: auto;
+}
+
+.imgRedes:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+
+    footer {
+    font-size: 10px;
+    }
+
+    .imgRedes {
+    width: 14px;
+    height: auto;
+    }
+
+}
