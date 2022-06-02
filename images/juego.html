@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Juego de la Horca</title>
+        <link rel="icon" href="./images/logo.gif">
+        <meta property="og:title" content="Juego de la Horca">
+        <meta property="og:type" content="photo">
+        <meta property="og:description" content="Juego clásico del Ahorcado">
+        <meta property="og:url" content="https://jairojrsandhers.github.io/Juego_del_Ahorcado/">
+        <meta property="og:image" content="https://raw.githubusercontent.com/JairoJrSandhers/Juego_del_Ahorcado/main/images/imagen-ogp.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/stilojuego.css">
+    </head>
+
+    <body>
+        <h1>Juego de la Horca</h1>
+        <canvas id="pantalla" width="960px" height="450px"> <!-- etiqueta del canvas con sus medidas en la pantalla -->
+            Tu navegador no soporta Canvas.
+        </canvas>
+        <!-- El boton que nos sirve para recargar la pagina y asi generar una nueva palabra y volver a jugar -->
+        <button class="boton" id="reset-game" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+        <button class="boton" id="volver-atras" onclick="location.href='./index.html'">Volver al inicio</button>
+    </body>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2022 by Jairo Sandoval Hernández</p>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/JairoJrSandhers" target="_blank"><img class="imgRedes" src="./images/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/jairojrsandhers/" target="_blank"><img class="imgRedes" src="./images/linkedin.svg" alt="Linkedin"></a>
+        </div>
+    </footer>
+
+    <script src="./js/cryptography.js"></script>
+    
+</html>
